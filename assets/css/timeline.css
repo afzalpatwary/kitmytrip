@@ -1,0 +1,220 @@
+/*===== Vertical Timeline =====*/
+
+#conference-timeline {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#conference-timeline .timeline-start,
+#conference-timeline .timeline-end {
+    display: table;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #00b0bd;
+    padding: 15px 23px;
+    color: #fff;
+    max-width: 5%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#conference-timeline .conference-center-line {
+    position: absolute;
+    height: 80%;
+    top: 70px;
+    left: 50%;
+    margin-left: -2px;
+    border: 1px dashed #fda277;
+    opacity: 1;
+    z-index: 0;
+}
+
+#conference-timeline .conference-timeline-content {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.timeline-article {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-article .content-left-container,
+.timeline-article .content-right-container {
+    max-width: 44%;
+    width: 100%;
+}
+
+.timeline-article .timeline-author {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #242424;
+    text-align: right;
+}
+
+.timeline-article .content-left,
+.timeline-article .content-right {
+    position: relative;
+    width: auto;
+    background-color: #fff;
+    padding: 27px 25px;
+}
+
+.content-left .hints,
+.content-right .hints {
+    position: relative;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.content-left .hints::after,
+.content-right .hints::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background: #ffa200;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(100% + 10px);
+}
+
+.content-left .accordion-list-item,
+.content-right .accordion-list-item {
+    border: 2px solid #ecf0f0;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.content-left .accordion-title,
+.content-right .accordion-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #194a4d;
+}
+
+.accordion-title:hover {
+    color: #00939c;
+}
+
+.content-left:focus {
+    color: #00939c;
+}
+
+.content-right-container .fw-bolds,
+.content-left-container .fw-bolds {
+    font-size: 36px;
+    line-height: 54px;
+    color: #003033;
+}
+
+.meta-date .last-circle {
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    background: #ffffff;
+    border: 2px solid #00939c;
+    margin-right: 2px;
+}
+
+.timeline-article .content-left-container {
+    float: left;
+}
+
+.timeline-article .content-right-container {
+    float: right;
+}
+
+.timeline-article .content-left:before,
+.timeline-article .content-right:before {
+    position: absolute;
+    top: 20px;
+    font-size: 23px;
+    font-family: "FontAwesome";
+    color: #fff;
+}
+
+.timeline-article .meta-date {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 52px;
+    height: 52px;
+    margin-left: -31px;
+    color: #fff;
+    border-radius: 100%;
+    background-color: #ec601d;
+    border: 2px solid #ec601d;
+}
+
+.timeline-article .meta-date .date {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+}
+
+/*===== // Vertical Timeline =====*/
+
+/*===== Resonsive Vertical Timeline =====*/
+
+@media only screen and (max-width: 2000px) {
+    #conference-timeline .timeline-start,
+    #conference-timeline .timeline-end {
+        margin: 0;
+    }
+    #conference-timeline .conference-center-line {
+        margin-left: 0;
+        left: 51px;
+    }
+    .timeline-article .meta-date {
+        margin-left: 0;
+        left: 0px;
+    }
+    .timeline-article .content-left-container,
+    .timeline-article .content-right-container {
+        max-width: 100%;
+        width: auto;
+        float: none;
+        margin-left: 45px;
+        min-height: 53px;
+    }
+    .timeline-article .content-left-container {
+        margin-bottom: 0px;
+    }
+    .timeline-article .content-left,
+    .timeline-article .content-right {
+        padding: 10px 25px;
+        min-height: 65px;
+    }
+    /* .timeline-article .content-left:before {
+        content: "\f0d9";
+        right: auto;
+        left: -8px;
+    } */
+    .timeline-article .content-right:before {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .timeline-article p {
+        margin: 0;
+    }
+    .timeline-article p span.article-number {
+        display: none;
+    }
+}
+
+/*===== // Resonsive Vertical Timeline =====*/

@@ -1,0 +1,16 @@
+span.irs-max, span.irs-to, span.irs-from, span.irs-min {
+    display: none;
+}
+.irs--round .irs-bar {
+    height: 8px;
+    background-color: #EC601D;
+}
+.irs--round .irs-line {
+    height: 8px;
+    background-color: #FEE8DD;
+    border-radius: 8px;
+}
+.irs--round .irs-handle {
+    border: 4px solid #EC601D;
+    cursor: pointer;
+}

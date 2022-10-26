@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.rightmenu .switch.indx-switch .switchInput {
+    appearance: none;
+    width: 80px;
+    padding-left: 10px;
+    background-image: url(../img/sun-icon.png) !important;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    background-position: 82% center;
+    position: relative;
+    cursor: pointer;
+}
+.switch .switchInput::after {
+    background-image: url(../img/borderShape.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    content: "";
+}
+
+.switch .switchInput::before {
+    content: "Dark";
+    color: #373536;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 32px;
+    font-family: "Manrope", sans-serif;
+}
+.stickyHeaders .switch .switchInput::before{
+    color: #373536 !important;
+}
+
+/* .switch :checked {
+    background-position: 16px;
+  } */
+
+.switch :checked::before {
+    content: "Light";
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Manrope", sans-serif;
+}
+
+/* select2 */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #373536 !important;
+    font-size: 14px;
+    font-weight: 700;
+}
+.navbar .select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: #918D91 !important;
+}
+.stickyHeaders .select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: #373536 !important;
+}
+.select2-container--default .select2-selection--single {
+    background-color: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+span.select2-dropdown.select2-dropdown--below {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #918d91;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    display: none;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #db105b !important;
+    border-radius: 4px;
+}
+.select2-dropdown {
+    border: 0 !important;
+}
+.searchFor .select2-selection__arrow b {
+    border: 0 !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.2802 5.96667L8.93355 10.3133C8.42021 10.8267 7.58021 10.8267 7.06688 10.3133L2.72021 5.96667' stroke='%23918D91' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    width: 16px !important;
+    height: 8px !important;
+}
+
+/* landing switch */
+
+.rightmenu .switchInput {
+    appearance: none;
+    width: 80px;
+    padding-left: 38px;
+    background-image: url(../img/sun-icon.png);
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    background-position: 10% center;
+    position: relative;
+    cursor: pointer;
+}
+.rightmenu.lang .switchInput {
+    appearance: none;
+    width: 80px;
+    padding-left: 38px;
+    background-image: url(../img/darkIcon.svg);
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    background-position: 10% center;
+    position: relative;
+    cursor: pointer;
+}
+
+.bg {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    animation: pulse 1.5s ease infinite;
+    background: #db105b;
+    opacity: 0.2;
+}
+@media (max-width:991px) {
+    .bg {
+    width: 66px !important;
+    height: 66px !important;
+}
+}
+
+.button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.button a {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-size: 16px;
+
+    
+}
+
+   @media (max-width:991px) {
+       .button a img{
+           display: inline;
+           width: 66px;
+           height: 66px;
+       }
+   }    
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+

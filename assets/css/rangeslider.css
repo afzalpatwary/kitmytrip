@@ -1,0 +1,118 @@
+.price-range-slider .range-value {
+    margin: 0;
+}
+
+.price-range-slider .range-value input {
+    width: 25px;
+    background: none;
+    color: #db105b;
+    font-size: 14px;
+    font-weight: initial;
+    box-shadow: none;
+    border: none;
+    font-weight: 600;
+    margin: 20px 0 20px 0;
+}
+
+.price-range-slider .range-bar {
+    border: none;
+    background: #f4f1f6;
+    border-radius: 16px;
+    height: 8px;
+    width: 100%;
+    margin-left: 0;
+}
+
+.price-range-slider .range-bar .ui-slider-range {
+    background: #eb1933;
+}
+
+.price-range-slider .ui-slider-handle {
+    border: none;
+    border-radius: 25px;
+    background: #fff;
+    border: 0px solid #fff;
+    height: 0;
+    width: 0;
+    top: -10px;
+    cursor: pointer !important;
+    outline: none !important;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    background: #eb1933 !important;
+}
+
+.price-range-slider .ui-slider-handle {
+    background: #eb1933;
+    height: 26px;
+    width: 26px;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 13%);
+    border: 6px solid #fff !important;
+}
+
+.ui-widget.ui-widget-content {
+    border: none !important;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+    color: #eb1933 !important;
+}
+
+/*--- /.price-range-slider ---*/
+
+/* rang slider 2 */
+.noUi-tooltip {
+    display: none;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+    width: 14px !important;
+    width: 10px;
+    border-radius: 50%;
+    background: #eb1933;
+    left: 6px;
+    top: 6px;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.13);
+    border: none !important;
+}
+
+.noUi-target {
+    background: #f4f1f6;
+    border-radius: 40px;
+    border: none;
+    box-shadow: none;
+}
+
+.noUi-horizontal {
+    height: 8px;
+}
+
+.noUi-connect {
+    background: #eb1933;
+}
+
+html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
+    right: -15px;
+    top: -10px;
+    cursor: pointer;
+}
